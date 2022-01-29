@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from fastapi.responses import StreaminingResponse
+from fastapi.responses import StreamingResponse
 
 app = FastAPI()
 
@@ -60,6 +60,6 @@ def get_iris():
     fig.saveFig('iris.png')
     file = open('iris.png', mode='rb')
 
-    return StreaminingResponse(file, media_type='image/png')
+    return StreamingResponse(file, media_type='image/png')
 
 

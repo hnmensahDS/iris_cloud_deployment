@@ -2,4 +2,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   arg: ['build', '-t', 'gcr.io/northern-union-322016/first_app', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  arg: ['push', '-t', 'gcr.io/northern-union-322016/first_app', '.']
+  arg: ['push', 'gcr.io/northern-union-322016/first_app']

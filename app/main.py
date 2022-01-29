@@ -57,7 +57,7 @@ def get_iris():
     ax.set_zlabel("3rd eigenvector")
     ax.w_zaxis.set_ticklabels([])
     
-    fig.saveFig('iris.png')
+    fig.savefig('iris.png')
     file = open('iris.png', mode='rb')
 
     return StreamingResponse(file, media_type='image/png')
